@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AJAX requesting a JSON file</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <h1>AJAX requesting a JSON file</h1>
+
+        <h2>THE ARTICLES OF FAITH <br>
+            OF THE CHURCH OF JESUS CHRIST OF LATTER-DAY SAINTS</h2>
+
+        <h3>CHAPTER 1</h3>
+        <p>If closed, click the box to
+            <button type="button" onclick="ajaxJson()">Open</button><br><br>
+        </p>
+        <div id="display"></div>
+        <p>You can click to <button type="button" onclick="closeajaxJson()">Close</button>
+        </p>
+    </main>
+
+    <footer>&COPY; 2019 Nkenta Uchechukwu Ferdinand </footer>
+    <script src="script.js"></script>
+    <script>ajaxJson();</script>
+</body>
+
+</html>
