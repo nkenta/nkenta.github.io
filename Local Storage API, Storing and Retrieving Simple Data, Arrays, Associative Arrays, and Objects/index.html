@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Local Storage API, Storing and Retrieving Simple Data, Arrays, Associative Arrays, and Objects</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <main>
+        <h1>Local Storage API</h1>
+        <div>
+            <h3>Enter your name and location</h3>
+            <section>
+                <form>
+                    <p>Name: <input type="text" id="name"></p>
+                    <p>Location: <input type="text" id="location"></p>
+                    <p><input type="button" id="button" value="Save"></p>
+                </form>
+            </section>
+            <section id="result">
+                <p>Sorry no data to display!</p>
+            </section>
+            <hr>
+        </div>
+
+        <div>
+            <h3>Pick your lucky number and see what you get.</h3>
+
+            <select onchange='select()' id='choice'>
+                <option value="You've not made any selection. Choose between 1 to 5">Select</option>
+                <option value="Your lucky number got you a Car.">1</option>
+                <option value="Your lucky number got you a Notebook.">2</option>
+                <option value="Your lucky number got you a Box.">3</option>
+                <option value="Your lucky number got you a Computer.">4</option>
+                <option value="Your lucky number got you a Hat.">5</option>
+            </select>
+            <section>
+                <div>
+                    <button onclick="gameResult()">Play</button>
+                    <button onclick="gameReset()">Reset</button>
+                    <p><strong>Note:</strong> Hit reset and choose another number to continue</p>
+                </div>
+            </section>
+        </div>
+    </main>
+    <hr>
+    <footer>&COPY; 2019 Nkenta Uchechukwu Ferdinand </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
