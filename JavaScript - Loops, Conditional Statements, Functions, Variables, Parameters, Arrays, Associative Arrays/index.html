@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Javascript loop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <main>
+        <h1>JavaScript - Loops, Conditional Statements, Functions, Variables, Parameters, Arrays, Associative Arrays
+        </h1>
+        <section>
+            <h2>JavaScript For Loop Statement</h2>
+            <p> Get a random rumber between <strong>1</strong> and <strong>100</strong> <br>
+                <strong>Note:</strong> Tap on run to get diffrent numbers.<br>
+                <button type="button" onclick="forLoop()">Run</button><br>
+                <hr>
+                <span id="forloop"></span>
+        </section>
+
+        <section>
+            <h2>JavaScript While Loop Statement</h2>
+            <p>Count nunber from 1 to 10<br>
+                <button type="button" onclick="whileLoop()">Count</button><br>
+                <hr>
+                <span id="whileloop"></span>
+        </section>
+
+        <section>
+            <h2>JavaScript Do/While Statement</h2>
+            <p>Loop through a block of code as long as i is less than 5.</p>
+            <button type="button" onclick="whileDoLoop();">Run it</button>
+            <hr>
+            <span id="doLoop"></span>
+        </section>
+
+        <section>
+            <h2>JavaScript If Statement</h2>
+            <p>Which of this two animals are domestic?</p>
+            <label>
+                <input type="radio" name="animal" value="Dog" onclick="domAnimal(this.value);"> Dog
+            </label>
+            <label>
+                <input type="radio" name="animal" value="Polar Bear" onclick="domAnimal(this.value);"> Polar Bear
+            </label>
+        </section>
+
+        <h2>JavaScript If Else Statement</h2>
+        <p>Point two animals that are considered to be wild.</p>
+        <section>
+            <label>
+                <input type="radio" name="animal" value="Dog" onclick="wildAnimal(this.value);"> Dog
+            </label>
+            <label>
+                <input type="radio" name="animal" value="Lion" onclick="wildAnimal(this.value);"> Lion
+            </label>
+            <label>
+                <input type="radio" name="animal" value="Gorilla" onclick="wildAnimal(this.value);"> Gorilla
+            </label>
+        </section>
+
+        <section>
+            <h2>JavaScript Vairables Parameters</h2>
+            <p>--Temperature Degree Conversion--</p>
+            <input type="input" id="c"><br>
+            <button type="button" onclick="convert('C')">Celsius Degrees </button><br>
+            <hr>
+            <input type="input" id="f"><br>
+            <button type="button" onclick="convert('F')">Fahrenheit Degrees </button>
+        </section>
+
+        <section>
+            <h2>JavaScript Arrays</h2>
+            <p>What are 7 continents of the world and their names?</p>
+            <button type="button" onclick="world();">Click to see</button><br>
+            <button type="button" onclick="clearList();">Clear</button>
+            <span id="show"></span>
+        </section>
+        
+        <section>
+            <h2>JavaScript Associative Array</h2>
+            <p>Intresting fact about Africa</p>
+            <ul>
+                <li>Area</li>
+                <li>Population</li>
+                <li>GDP</li>
+                <li>Countries</li>
+                <li>Language</li>
+                <li>Time zones</li>
+            </ul>
+            <p>Note: The words are case-sensitive</p>
+            <input type="input" id="africaFactinput"><br>
+            <button type="button" onclick="africaFact();">Submit</button>
+            <span id="showInfo"></span>
+        </section>
+    </main>
+    <footer>&COPY; 2019 Nkenta Uchechukwu Ferdinand </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
