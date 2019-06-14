@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS3 Transitions and Animations trigged with JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <main>
+        <h1>Creating CSS3 Transitions and Animations in CSS and triggering them with JavaScript</h1>
+        <section>
+            <h2>Transitions</h2>
+            <p></p>
+            <div id="box">
+                <p>Make me <strong>RGB</strong><br></p>
+            </div>
+            <p>Click on the button get started...</p>
+            <button onclick="changeColor('box','Red')">Red</button>
+            <button onclick="changeColor('box','Green')">Green</button>
+            <button onclick="changeColor('box','Blue')">Blue</button>
+            <button onclick="changeColor('box','#888888');">Default</button>
+        </section>
+        <hr>
+
+        <div>
+            <h2>Animations</h2>
+            <fieldset>
+                <div>
+                    <img src="content/loading.png" id="circle">
+                </div>
+            </fieldset>
+            <div>
+                <p>Click on run button to animate...</p>
+                <button onClick="start();">Start</button>
+            </div>
+        </div>
+        <hr>
+    </main>
+
+    <footer>&COPY; 2019 Nkenta Uchechukwu Ferdinand </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
