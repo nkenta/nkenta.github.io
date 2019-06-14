@@ -1,0 +1,110 @@
+body{
+    background: crimson;
+    color: whitesmoke;
+}
+
+main{
+    width: 60%;
+    height: auto;
+    margin: 50px auto;
+}
+
+main h1, h3{
+    margin-top: -20px;
+    text-align: center;
+}
+
+section > p {
+    text-align: center;
+}
+
+.padup{
+    padding-top: 40px;
+}
+
+/**CSS3 Transitions**/
+.rotateArrow{
+    width: 100px;
+    margin: 50px auto;
+    padding: 50px 0;
+    line-height: 0;
+    cursor: pointer;
+    transition: 3s;   
+    background: indianred;
+    color: floralwhite;    
+    border-radius: 50px;
+}
+
+.rotateArrow:hover{
+    background: wheat;
+    color: firebrick;
+    transform: rotate(360deg);
+}
+
+/**CSS3 Transforms**/
+.moveCar > img {
+    display: block;
+    width: 200px;    
+    margin: auto;
+    transition:  transform 3s linear;   
+}
+
+.moveCar > p{
+    text-align: center;
+}
+
+.moveCar > img:hover{
+    transform: translate(100%);
+    transition: transform 3s ease-in;
+}
+
+/**CSS3 Animations**/
+#wrap{
+    position: absolute;
+    right: 46%;
+}
+
+.byu > img{
+    display: block;
+    width: 100px;     
+}
+
+.byu:before{
+    border-radius: 50%;
+    box-shadow: 0 0 rgba(255,255,255,0.3), 0 0 0 16px rgba(255,255,255,0.3),
+    0 0 0 32px rgba(255,255,255,0.3), 0 0 0 48px rgba(255,255,255,0.3);
+    z-index: -1;
+    animation: animate 1s linear infinite; 
+    animation-play-state: paused;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+    transform: scale(0.5);
+    position: absolute;
+    content: '';
+    top: -3px;
+    left: -3px;
+    right: -3px;
+    bottom: -3px;
+}
+
+.byu:hover:before{
+    visibility: visible;
+    transform: scale(1);
+    animation-play-state: running;
+    opacity: 1;
+}
+
+@keyframes animate{
+    to{
+        box-shadow: 0 0 0 16px rgba(255,255,255,0.3), 0 0 0 32px rgba(255,255,255,0.3), 
+        0 0 0 48px rgba(255,255,255,0.3), 0 0 0 64px rgba(255,255,255,0.3);
+    }
+}
+
+footer{    
+   position: relative;
+   bottom: -100px;
+   text-align: center;
+   padding-bottom: 20px;
+}
