@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Manipulating CSS Class Properties Using JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="siteBody">
+
+
+    <main id="mobileView">
+        <h1>Manipulating CSS Class Properties Using JavaScript</h1>
+
+        <section>
+            <div id="ball">{-o-----|</div>
+            <div>
+                <p id="text">Manipulation In Progress...</p>
+            </div>
+
+        </section>
+        <section>
+            <h2>Controls Botton</h2>
+            <button type="button" onclick="changeColor()">Change Text Color</button>
+            <button type="button" onclick="colorDefault()">Default Text Color</button>
+            <button type="button" onclick="invisible()">Hide Text</button>
+            <button type="button" onclick="visible()">Show Text</button><br><br>
+            <button type="button" onclick="textSize()">Change Font Size</button>
+            <button type="button" onclick="resetText()">Reset Text</button>
+            <button type="button" onclick="siteColor()">Site Color</button>
+            <button type="button" onclick="resetSiteColor()">Reset Site Color</button><br><br>
+            <button type="button" onclick="clockwise()">Clockwise Ball</button>
+            <button type="button" onclick="anticlockwise()">Anticlockwise Ball</button>
+            <button type="button" onclick="mobile()">Mobile View</button>
+            <button type="button" onclick="desktop()">Desktop View</button>  
+        </section>
+        <section>
+            <p><Strong>Note:</Strong> Switch to desktop only when mobile view is toggled.</p>
+        </section><hr>
+    </main>
+    <footer>&COPY; 2019 Nkenta Uchechukwu Ferdinand </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
