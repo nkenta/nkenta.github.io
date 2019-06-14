@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DOM Manipulation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <h1>DOM Manipulation</h1><hr>
+        <div>
+            <h3>Create a username and password</h3>
+            <fieldset>
+                <div id="usersBox"></div>
+            </fieldset>
+            <input type="button" onclick="create()" value="Create">
+            <p>Username: <input id="userName" type="text"></p>
+            <p>Password: <input id="password" type="text"></p>
+            <input type="button" onclick="addAtBeginning()" value="Add at beginning">
+            <input type="button" onclick="addAtEnd()" value="Add at end"><hr>
+            <input type="button" onclick="deleteFirst()" value="Delete first user">
+            <input type="button" onclick="deleteLast()" value="Delete last user">
+            <input type="button" onclick="clearAll()" value="Claar All">
+        </div>
+  
+        <section>
+            <h3>Key Note for the buttons:</h3>
+            <ul>
+                <li><strong>Create:</strong> This will auto generate new user and password.</li>
+                <li><strong>Add at beginning:</strong> This will create a new user and password at the very top of the list.</li>
+                <li><strong>Add at end:</strong> This will create a new user and password at bottom of the user list.</li>
+                <li><strong>Delete first user:</strong> This will delete the very first username and password.</li>
+                <li><strong>Delete last user:</strong> This will delete the last username and passowrd found in the list.</li>
+                <li><strong>Clear All:</strong> This will remove all listed users and password at once.</li>
+            </ul>
+        </section>
+    </main>
+    <footer>&COPY; 2019 Nkenta Uchechukwu Ferdinand </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
