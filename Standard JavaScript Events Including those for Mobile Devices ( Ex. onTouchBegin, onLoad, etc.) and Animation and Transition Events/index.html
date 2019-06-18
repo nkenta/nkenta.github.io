@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Standard JavaScript Events</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="onLoadPage()">
+
+
+    <main>
+        <h1>Standard JavaScript Events</h1>
+        <h3> onChange Event </h3>
+        <div>
+            <div id="shape"></div>
+            <select id="colors" onchange="changeColor()">
+                <option value="White">Default</option>
+                <option value="Green">Green</option>
+                <option value="Gray">Gray</option>
+                <option value="Yellow">Yellow</option>
+                <option value="Red">Red</option>
+                <option value="Blue">Blue</option>
+            </select>
+            <hr>
+
+            <h3> Transition Event </h3>
+            <div id="arrow">{-o-----|</div>
+            <button type="button" onclick="anticlockwise()">Left</button>
+            <button type="button" onclick="clockwise()">Right</button>
+            <hr>
+
+            <h3> onClick Event </h3>
+            <p>How many days are found in a year?</p>
+            <button onclick="days()">Click to see!</button> <strong><span id="result"></span></strong>
+            <hr>
+
+            <h3> onMouseover Event </h3>
+            <img onmouseover="increase(this)" onmouseout="normal(this)" src="contents/twitter.png" alt="twitter"
+                id="tweet">
+            <hr>
+
+            <h3> onKeydown Event </h3>
+            <p>Type in the box: <input type="text" onkeydown="typeKey()"></p>
+            <hr>
+
+            <h3>Animation onClick</h3>
+            <div>
+                <img src="contents/twitter.png" id="aniTweet">
+            </div>
+            <div>
+                <button onClick="start();">Make me blink</button>
+            </div>
+    </main>
+    <hr>
+    <footer>&COPY; 2019 Nkenta Uchechukwu Ferdinand </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
