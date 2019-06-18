@@ -97,7 +97,7 @@ function addToBasket() {
     }
     // Controls notification message of maximum basket reached
     else if (baskets.length > 3) {
-        document.write("Sorry! You've achieved the maximum basket. Please reload the page to continue.");
+        alert("Sorry! You've achieved the maximum basket. Please reload the page to continue.");
     }
     //Reset and prepare element for next input
     document.getElementById('fruit').value = '';
