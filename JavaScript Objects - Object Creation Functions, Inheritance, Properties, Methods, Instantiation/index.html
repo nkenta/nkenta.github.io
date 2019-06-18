@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Javascript Object</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <h1>JavaScript Objects - Object Creation Functions, Inheritance, Properties, Methods, Instantiation</h1>
+        <hr>
+        <section>
+            <div id="form">
+                <h2>Create A Simple Message</h2>
+                <lable for="to">To: </lable>
+                <input type="text" id="inputTo"><br>
+                <lable for="from">From: </lable>
+                <input type="text" id="inputFrom"><br>
+                <lable for="message">Message:</lable>
+                <input type="text" id="inputMessage"><br><br>
+                <button id="createmsg">Create Message</button><br><br>
+            </div>
+            <fieldset>
+                <section><strong>To:</strong><span id="msgTo"></span><br><br>
+                </section>
+                <fieldset id="message">
+                    <i>message box is empty...</i>
+                </fieldset><br>
+                <section><strong>From:</strong><span id="msgFrom">
+                    </span>
+                </section>
+            </fieldset>
+        </section><br>
+
+        <section>
+            <h2>Add Fruit Baskets | Max: 3</h2>
+            <fieldset>
+                <input type="text" id="fruit" placeholder="Fruit"><br>
+                <input type="text" id="color" placeholder="Color"><br>
+                <input type="text" id="weight" placeholder="Weight"><br><br>
+                <button onclick="addToBasket()">Add Basket</button>
+                <h3>Your Baskets:</h3>
+                <fieldset>
+                    <div id="basket">&nbsp;</div>
+                    <p>&nbsp;</p>
+                    <div id="basketDescription">&nbsp;</div>
+                </fieldset>
+                <p><strong>Note:</strong>When you reach the maximum basket and try to add more, you will receive a
+                    message prompt. Follow the instruction to get back to the page.</p>
+            </fieldset>
+        </section>
+    </main>
+    <footer>&COPY; 2019 Nkenta Uchechukwu Ferdinand </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
