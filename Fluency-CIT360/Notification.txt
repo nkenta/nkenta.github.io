@@ -1,1 +1,18 @@
 This folder covers CIT 360 Fluecy Reports.
+
+During Weeks 1-10, you should reach a familiarity level of 'Basic in the following 14 topics.
+
+Java Collections	 	 	 
+Threads, Executors, and Runnables	 	 	 
+Application Controller Pattern	 	 	 
+MVC	 	 	 
+Hibernate	 	 	 
+QCJSON and JSON	 	 	 
+Android HttpUrlConnection	 	 	 
+Servlets	 	 	 
+JUnit Tests	 	 	 
+System Level Tests	 	 	 
+Use Case Diagrams	 	 	 
+Use Case Documents	 	 	 
+State Diagrams	 	 	 
+Sequence Diagrams	  
