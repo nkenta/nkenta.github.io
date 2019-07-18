@@ -19,13 +19,17 @@ body {
 /**Header stylings**/
 
 #logo {
-    background: url(/images/Byui.png) center no-repeat;
-    height: 60px;
-    background-size: 150px;
+    height: 50px;
+}
+
+#logo img {
+    padding-top: 3px;
+    width: 78px;
+    margin: auto;
 }
 
 header {
-    background-color: gainsboro;
+    background-color: #bedceb;
 }
 
 
@@ -34,14 +38,57 @@ header {
 .topnav {
     overflow: hidden;
     background-color: #0076b6;
+    height: 30px;
+}
+
+#applyRight a {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    background-color: #555555;
+    padding: 6px 60px;
+    margin-right: 70px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+#applyRight a:hover {
+    background-color: #006aa3;
+    color: whitesmoke;
+}
+
+#applyRight a.active {
+    background-color: #d2e7f1;
+    color: #0076b6;
+    animation-name: apnavCat;
+    animation-duration: 3s;
+    transform: rotate(0deg);
+    height: 30px;
+    border-radius: 50px;
+    margin-left: 10px;
+}
+
+@keyframes apnavCat {
+    from {
+        background-color: #006aa3;
+        color: whitesmoke;
+    }
+    to {
+        background-color: whitesmoke;
+    }
+}
+
+#moveCat {
+    margin-left: 80px;
 }
 
 .topnav a {
     float: left;
     display: block;
     color: #f2f2f2;
-    text-align: center;
-    padding: 12px 14px;
+    padding: 6px 16px;
     text-decoration: none;
     font-size: 16px;
 }
@@ -49,25 +96,30 @@ header {
 .topnav a:hover {
     background-color: #555555;
     color: whitesmoke;
+    border-radius: 10px;
+    margin: auto;
+    font-weight: bold;
+    color: #bedceb
 }
 
 .topnav a.active {
-    background-color: gainsboro;
-    color: #0076b6;
+    background-color: #555555;
+    color: #bedceb;
     animation-name: navCat;
     animation-duration: 3s;
     transform: rotate(-10deg);
-    height: 40px;
-    border-radius: 50px;
-    margin-left: 10px;
+    height: 28px;
+    border-radius: 100px;
+    margin-left: auto;
 }
 
 @keyframes navCat {
     from {
-        background-color: #888888;
+        background-color: #006aa3;
     }
     to {
         background-color: whitesmoke;
+        color: #252525;
     }
 }
 
@@ -95,8 +147,8 @@ img {
     position: relative;
     padding: 5px;
     width: 85%;
-    background: #eaeaea;
-    border: 5px solid #eaeaea;
+    background: #f2f8fb;
+    border: 5px solid #f2f8fb;
     margin: auto;
 }
 
@@ -263,6 +315,16 @@ footer a {
 
 /*------------------Course Page styling----------------------*/
 
+#courseWrap {
+    padding-top: 20px;
+    width: 80%;
+    margin: auto;
+}
+
+#courseFieldset {
+    border: #006aa3 1px dotted;
+}
+
 #sugBtnA,
 #sugBtnB,
 #sugBtnC {
@@ -273,7 +335,7 @@ footer a {
 }
 
 #suggest {
-    width: 12.5%;
+    width: 15.5%;
     transition: width 2s, height 4s;
 }
 
@@ -570,7 +632,6 @@ button:hover {
 
 @media only screen and (max-width: 650px) {
     #logo {
-        background: url(/images/Byui.png) center no-repeat;
         height: 50px;
         background-size: 100px;
     }
