@@ -11,16 +11,21 @@
     <link rel="stylesheet" href="style/main.css">
 </head>
 
-<body id="siteMode" onload="onLoadPage()">
-    <header>
-        <div id="logo"></div>
+<body id="siteMode">
+    <header id="logo">
+        <img src="images/logo.png" alt="sitelogo">
     </header>
 
     <nav class="topnav" id="responsiveNav">
-        <a href="index.html">Home</a>
-        <a href="course.html">Course</a>
-        <a href="apply.html">Apply</a>
-        <a href="contact.html" class="active">Contact</a>
+        <div id="moveCat">
+            <a href="index.html">Home</a>
+            <a href="course.html">Course</a>
+            <a href="contact.html" class="active">Contact</a>
+        </div>
+
+        <span id="applyRight">
+                    <a href="apply.html">Apply</a>
+                </span>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
         </a>
@@ -49,7 +54,7 @@
                             <input type="text" id="name" name="Yourname" placeholder="name please" required>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row ">
                         <div class="col-A">
                             <label for="lname">Email Address:</label>
                         </div>
@@ -57,7 +62,7 @@
                             <input type="text" id="lname" name="lastname" placeholder="valid email" required>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row ">
                         <div class="col-A">
                             <p>Nature of your inquiry?</p>
                         </div>
@@ -76,7 +81,7 @@
                         <div class="col-A">
                             <label for="subject">Subject</label>
                         </div>
-                        <div class="col-B">
+                        <div class="col-B ">
                             <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
                         </div>
                     </div>
@@ -96,9 +101,9 @@
 
         <div>
             <p>Change site Background mode</p>
-            <button onclick="DchangeColor('siteMode','#2d2d2d')" id="siteModeBtnD"><span id="adjusD">Dark Mode</span></button>
-            <button onclick="LchangeColor('siteMode','#ffffff')" id="siteModeBtnL"><span id="adjusL">Light Mode</span></button>
-            <hr id="sitemodehr">
+            <button onclick="DchangeColor( 'siteMode', '#2d2d2d')" id="siteModeBtnD "><span id="adjusD">Dark Mode</span></button>
+            <button onclick="LchangeColor( 'siteMode', '#ffffff')" id="siteModeBtnL "><span id="adjusL">Light Mode</span></button>
+            <hr id="sitemodehr ">
         </div>
     </footer>
     <script src="js/scripts.js"></script>

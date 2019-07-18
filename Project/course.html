@@ -12,22 +12,27 @@
 </head>
 
 <body id="siteMode">
-    <header>
-        <div id="logo"></div>
+    <header id="logo">
+        <img src="images/logo.png" alt="sitelogo">
     </header>
 
     <nav class="topnav" id="responsiveNav">
-        <a href="index.html">Home</a>
-        <a href="course.html" class="active">Course</a>
-        <a href="apply.html">Apply</a>
-        <a href="contact.html">Contact</a>
+        <div id="moveCat">
+            <a href="index.html">Home</a>
+            <a href="course.html" class="active">Course</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+        <span id="applyRight">
+                    <a href="apply.html">Apply</a>
+                </span>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
         </a>
     </nav>
 
-    <main>
-        <fieldset>
+    <main id="courseWrap">
+        <fieldset id="courseFieldset">
             <div>
                 <h3>Welcome to the school course list</h3>
                 <p>Because every individual have diffrent desires and diffrent talents for things, we've made it simple for you to choose a course. Kindly use the suggestion plan to get started. </p>
