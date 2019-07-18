@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Nkenta Uchechkwu Ferdinand">
+    <title>BYU-Idaho | Welcome</title>
+    <link rel="icon" href="images/fav.JPG">
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body id="siteMode">
+    <header>
+        <div id="logo"></div>
+    </header>
+
+    <nav class="topnav" id="responsiveNav">
+        <a href="index.html" class="active">Home</a>
+        <a href="course.html">Course</a>
+        <a href="apply.html">Apply</a>
+        <a href="contact.html">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </nav>
+
+    <div class="imgSlideShow-container">
+        <div class="imgSlide fade">
+            <img src="/images/byu_center.jpg" alt="slideimg">
+        </div>
+
+        <div class="imgSlide fade">
+            <img src="/images/campus.jpg" alt="slideimg">
+        </div>
+
+        <div class="imgSlide fade">
+            <img src="images/enroll.jpg" alt="slideimg">
+        </div>
+
+        <div class="imgSlide fade">
+            <img src="images/student_dev.jpg" alt="slideimg">
+        </div>
+
+        <div class="imgSlide fade">
+            <img src="images/student_health.jpg" alt="slideimg">
+        </div>
+    </div>
+    <br>
+
+    <div>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+
+
+    <main>
+        <h1>Welcome to Admissions</h1>
+        <hr>
+        <div id="videoPad">
+
+            <video controls>
+                <source src="video/Back_To_School.mp4" type="video/mp4">
+                <p>Sorry! Your browser doesn't support HTML5</p>
+            </video><br>
+            <span><strong style="color: seagreen">READY?</strong> Get Back to School</span>
+        </div>
+        <hr>
+
+
+        <div id="countdown">
+            <div>
+                <span class="days"></span>
+                <div class="timetext">Days</div>
+            </div>
+            <div>
+                <span class="hours"></span>
+                <div class="timetext">Hours</div>
+            </div>
+            <div>
+                <span class="minutes"></span>
+                <div class="timetext">Minutes</div>
+            </div>
+            <div>
+                <span class="seconds"></span>
+                <div class="timetext">Seconds</div>
+            </div>
+        </div>
+
+        <div id="transdGo">
+            Two weeks more to
+            <p id="goTrans">Go!
+            </p> We cant wait to see you join us. <br> Start the Application Process
+
+            <p id="applyNow">
+                <a href="apply.html">Apply Now</a>
+            </p>
+        </div>
+    </main>
+    <footer>
+        <p>Copyright ©2019 | Designed by Nkenta Uchechukwu Ferdinand<br>
+            <a href="policy.html">Terms & Privacy</a> </p>
+
+        <div>
+            <p>Change site Background mode</p>
+            <button onclick="DchangeColor('siteMode','#2d2d2d')" id="siteModeBtnD"><span id="adjusD">Dark Mode</span></button>
+            <button onclick="LchangeColor('siteMode','#ffffff')" id="siteModeBtnL"><span id="adjusL">Light Mode</span></button>
+            <hr id="sitemodehr">
+        </div>
+    </footer>
+    <script src="js/scripts.js"></script>
+    <script>
+        ajaxJson();
+    </script>
+</body>
+
+</html>
