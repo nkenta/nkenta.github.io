@@ -144,8 +144,8 @@ function showSuggestion() {
 function ajaxJson() {
     var displayCourse = document.getElementById("displayCourse");
     var cList = new XMLHttpRequest();
-    cList.open("GET", "json/byuCourse.json", true);
-    cList.setRequestHeader("Title", "BYU-Idaho Course List", true);
+    cList.open("GET", "json/everGreenCourse.json", true);
+    cList.setRequestHeader("Title", "Ever Green Course List", true);
     cList.onreadystatechange = function() {
         if (cList.readyState == 4 && cList.status == 200) {
             var data = JSON.parse(cList.responseText);
